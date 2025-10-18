@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="./images/only-img.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Pitching Craft</title>
+</head>
+
+<body>
+    <section class="form-container-section flex items-center justify-center">
+        <div class="form-container mt-20 bg-white h-90 w-[400px] h-[450px] rounded-2xl" id="form-container">
+
+            <div
+                class="register-container p-10 rounded-3xl shadow-[0_3px_8px_rgba(0,0,0,0.24)] p-4 bg-white rounded-lg">
+
+                <div class="logo-form flex items-center justify-center">
+                    <img src="./images/pitch-craft-logo.png" alt="Pitch Craft Logo" width="180px">
+                </div>
+
+                <div class="top-form flex flex-col gap-1 mt-5">
+                    <h2 class="text-[20px] text-blue-600">Login or Create an account</h2>
+                    <h1 class="text-[16px] font-semibold">Use email and password to continue</h1>
+                </div>
+
+                <div class="email-password flex flex-col gap-4 mt-5">
+                    <input type="text" placeholder=" Email Address" id="email"
+                        class="border border border-gray-300 h-9 rounded-lg outline-none px-2">
+                    <input type="password" placeholder=" Password" id="password"
+                        class="border border border-gray-300 h-9 rounded-lg outline-none px-2">
+                </div>
+
+                <div class="signup-login flex flex-col w-full gap-4 mt-8">
+                    <button class="bg-blue-400 text-white rounded-3xl cursor-pointer p-2" id="signup">Sign Up</button>
+                    <button id="login"
+                        class="bg-blue-400 text-white rounded-3xl cursor-pointer p-2 text-center">Login</button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section>
+        <div class="main-content hidden" id="main-content">
+            <header class="gradient-bg text-black py-6  z-50 shadow-lg">
+                <div class="container mx-auto flex justify-between items-center px-6">
+                    <h1 class="text-3xl font-bold text-indigo-600">Pitch Craft</h1>
+                    <nav class="space-x-6">
+                        <a href="#features" class="hover:text-yellow-300 transition">Features</a>
+                        <a href="#how-it-works" class="hover:text-yellow-300 transition">How It Works</a>
+                        <a href="#contact" class="hover:text-yellow-300 transition">Contact</a>
+                    </nav>
+                </div>
+            </header>
+
+            <section class="hero-bg text-black py-24 text-center">
+                <div class="container mx-auto px-6 animate-fadeInUp">
+                    <h1 class="text-5xl md:text-6xl font-extrabold mb-4 text-indigo-600">Ignite Your Startup Journey
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Discover creative startup names, catchy
+                        taglines, compelling pitches, audience insights, and stunning landing pages with our AI-powered
+                        platform.</p>
+                    <a href="#" class="inline-block bg-indigo-500 text-white font-semibold py-3 px-8 rounded-full"
+                        id="launching">Launch Your Idea Now</a>
+                </div>
+            </section>
+
+            <section id="features" class="py-16 bg-white">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-4xl font-bold text-center mb-12 animate-fadeInUp">Why Choose Pitch Craft</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover-scale animate-fadeInUp">
+                            <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Unique Startup Names</h3>
+                            <p class="text-gray-600">Generate memorable, industry-specific names that make your brand
+                                stand out.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover-scale animate-fadeInUp"
+                            style="animation-delay: 0.2s;">
+                            <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Catchy Taglines</h3>
+                            <p class="text-gray-600">Craft taglines that resonate with your audience and define your
+                                vision.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover-scale animate-fadeInUp"
+                            style="animation-delay: 0.4s;">
+                            <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Compelling Pitches</h3>
+                            <p class="text-gray-600">Create investor-ready pitches that captivate and convert.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover-scale animate-fadeInUp"
+                            style="animation-delay: 0.6s;">
+                            <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Audience Insights</h3>
+                            <p class="text-gray-600">Understand your target market with data-driven audience analysis.
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover-scale animate-fadeInUp"
+                            style="animation-delay: 0.8s;">
+                            <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Landing Page Generator</h3>
+                            <p class="text-gray-600">Design professional, responsive landing pages in minutes.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="how-it-works" class="py-16 bg-gray-100">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-4xl font-bold mb-12 animate-fadeInUp">How It Works</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <div class="p-6 animate-fadeInUp">
+                            <div class="text-5xl text-indigo-600 mb-4 font-semibold">1</div>
+                            <h4 class="text-xl font-semibold mb-2">Input Your Idea</h4>
+                            <p class="text-gray-600">Share your startup concept or industry focus.</p>
+                        </div>
+                        <div class="p-6 animate-fadeInUp" style="animation-delay: 0.2s;">
+                            <div class="text-5xl text-indigo-600 mb-4 font-semibold">2</div>
+                            <h4 class="text-xl font-semibold mb-2">Choose Your Tools</h4>
+                            <p class="text-gray-600">Select names, taglines, pitches, or pages.</p>
+                        </div>
+                        <div class="p-6 animate-fadeInUp" style="animation-delay: 0.4s;">
+                            <div class="text-5xl text-indigo-600 mb-4 font-semibold">3</div>
+                            <h4 class="text-xl font-semibold mb-2">Generate & Customize</h4>
+                            <p class="text-gray-600">Get tailored results and tweak them to perfection.</p>
+                        </div>
+                        <div class="p-6 animate-fadeInUp" style="animation-delay: 0.6s;">
+                            <div class="text-5xl text-indigo-600 mb-4 font-semibold">4</div>
+                            <h4 class="text-xl font-semibold mb-2">Launch with Confidence</h4>
+                            <p class="text-gray-600">Use your assets to kickstart your startup journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="contact" class="bg-gray-900 text-white py-8">
+                <div class="container mx-auto px-6 text-center">
+                    <p class="mb-4">&copy; 2025 Startup Spark. All rights reserved.</p>
+                    <p>Contact us: <a href="mailto:info@startupspark.com"
+                            class="underline hover:text-yellow-300">info@startupspark.com</a></p>
+                    <div class="mt-4 space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <section>
+        <div id="startup-section" class="hidden">
+            <header class="flex items-center justify-between px-8 py-4 bg-white shadow-sm">
+                <div class="flex items-center gap-2">
+                    <div class="logo">
+                        <img src="./images/only-img.png" class="w-10" alt="Pitch Craft Icon">
+                    </div>
+                    <span class="text-lg font-bold ml-2 ">Pitch Craft</span>
+                </div>
+                <button id="logout"
+                    class="py-1 px-4 border border-gray-300 rounded-lg hover:bg-gray-100 transition">Logout</button>
+            </header>
+
+            <main class="max-w-6xl mx-auto p-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <section class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <h2 class="text-xl font-semibold mb-4">Generate Your Startup Idea</h2>
+                        <div class="flex gap-2 mb-4">
+                            <input type="text" placeholder="Enter a keyword (e.g. AI, Food, Travel)" id="keyword-input"
+                                class="flex-grow border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                            <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition"
+                                id="generate-idea-btn">Generate Idea</button>
+                        </div>
+
+                        <div id="loading-spinner" class="hidden text-center text-indigo-600 my-4">
+                            Generating idea...
+                        </div>
+
+                        <div id="startup-idea-card" class="hidden border border-gray-200 rounded-lg p-4 mt-6">
+                            <h3 class="text-2xl font-bold mb-2 text-indigo-600" id="startup-name"></h3>
+                            <p class="text-gray-600 mb-3 italic" id="startup-tagline"></p>
+                            <p class="text-gray-700 mb-3" id="startup-pitch"></p>
+                            <p class="text-sm text-gray-500 mb-4">
+                                <span class="font-semibold text-gray-700">Target Audience:</span> <span
+                                    id="startup-audience"></span>
+                            </p>
+                            <div class="flex gap-2">
+                                <button id="generate-landing-page-btn"
+                                    class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 transition">Generate
+                                    Landing Page</button>
+                                <button
+                                    class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">Save
+                                    Idea</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="landing-page-preview-section"
+                        class="hidden bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                        <h2 class="text-xl font-semibold mb-4">Landing Page Preview</h2>
+                        <div class="border border-gray-200 rounded-lg p-6 text-center">
+                            <h3 class="text-3xl font-extrabold mb-2 text-indigo-700" id="preview-name"></h3>
+                            <p class="text-xl text-gray-600 mb-4" id="preview-tagline"></p>
+                            <p class="text-gray-700 mb-6" id="preview-call-to-action-text"></p>
+                            <button
+                                class="px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">Notify
+                                Me</button>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
